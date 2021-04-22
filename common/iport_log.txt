@@ -1,0 +1,563 @@
+1970-01-13 23:07:23.694 00002 DeviceInfo: set mid:default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:23.856 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+1970-01-13 23:07:23.866 00002 DeviceInfo: --------------------------init info--------------------------
+1970-01-13 23:07:23.976 00002 ProductInfo: product info reset
+1970-01-13 23:07:24.037 00002 RegisterInfo: register info reset
+1970-01-13 23:07:24.077 00002 RegisterInfo: init() first register
+1970-01-13 23:07:24.081 00002 OtaAgentPolicy: --------------------------register--------------------------
+1970-01-13 23:07:24.105 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@5835789, connectTimeout=20000, socketTimeout=20000}
+1970-01-13 23:07:24.178 00002 App: initFota() 11
+1970-01-13 23:07:24.180 00002 Apk build time: _2021.02.23T15:34_
+1970-01-13 23:07:24.186 00002 App: retryGetMidIfNecessary will be executed
+1970-01-13 23:07:24.188 00002 App: mid is invalid
+1970-01-13 23:07:24.237 00091 getIMEI: imei2: null
+1970-01-13 23:07:24.191 00002 RegisterInfo: isValid() deviceSecret = null
+1970-01-13 23:07:24.249 00002 RegisterInfo: isValid() deviceId = null
+1970-01-13 23:07:24.250 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:24.269 00091 App: retry get mid, wait: 0
+1970-01-13 23:07:24.251 00002 App: download finish reset
+1970-01-13 23:07:24.285 00091 getIMEI: imei2: null
+1970-01-13 23:07:24.304 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:24.311 00002 AlarmManagerr:: setAlarm() start time:1970-01-15 00:07:26
+1970-01-13 23:07:24.324 00091 App: retry get mid, wait: 1000
+1970-01-13 23:07:24.352 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+1970-01-13 23:07:24.354 00002 usb: mounted
+1970-01-13 23:07:24.524 00092 ProductInfo: isValid() product_secret = null
+1970-01-13 23:07:24.528 00092 ProductInfo: isValid() product id = null
+1970-01-13 23:07:24.532 00002 JobSchedulerService: onCreate() 
+1970-01-13 23:07:24.639 00094 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/obtainProduct ,json:{"oem":"GlocalMe","models":"G4SQ19","platform":"msm8909_8.1","deviceType":"phone","timestamp":1120044,"sign":"b697cc1528cb5ae2e78cc836bbc850f5"}
+1970-01-13 23:07:25.332 00091 getIMEI: imei2: null
+1970-01-13 23:07:25.340 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:25.360 00091 App: retry get mid, wait: 2000
+1970-01-13 23:07:25.420 00094 HttpTools: doPostJson() response: result:null
+1970-01-13 23:07:25.438 00094 HttpTools: doPostJson() exception:
+null (0) - java.net.UnknownHostException: Unable to resolve host "iotapi.adups.com": No address associated with hostname
+	at com.abupdate.a.d.a.a(Unknown Source:58)
+	at com.abupdate.a.d.a.b(Unknown Source:18)
+	at com.abupdate.a.a.a(Unknown Source:15)
+	at com.abupdate.a.e.a.a.n(Unknown Source:4)
+	at com.abupdate.iot_libs.a.a.a(Unknown Source:357)
+	at com.abupdate.iot_libs.a.a.b(Unknown Source:56)
+	at com.abupdate.iot_libs.c.m.call(Unknown Source:3)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.net.UnknownHostException: Unable to resolve host "iotapi.adups.com": No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:111)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:90)
+	at java.net.InetAddress.getAllByName(InetAddress.java:787)
+	at com.android.okhttp.Dns$1.lookup(Dns.java:39)
+	at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:175)
+	at com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:141)
+	at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:83)
+	at com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:174)
+	at com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:126)
+	at com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:95)
+	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:281)
+	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:224)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:461)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:127)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:258)
+	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(Unknown Source:0)
+	at com.abupdate.a.d.a.a(Unknown Source:27)
+	at com.abupdate.a.d.a.b(Unknown Source:101)
+	at com.abupdate.a.d.a.a(Unknown Source:47)
+	... 12 more
+
+1970-01-13 23:07:25.441 00092 IOTCallbackManager: ==========================onCheckVersionFailed==========================
+1970-01-13 23:07:25.443 00092 IOTCallbackManager: onCheckVersionFailed() error code:3001,message:device info is not completed!
+1970-01-13 23:07:25.446 00092 IOTCallbackManager: onCheckVersionFailed() sCheckVersionListener==null
+1970-01-13 23:07:26.287 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+1970-01-13 23:07:27.367 00091 getIMEI: imei2: null
+1970-01-13 23:07:27.369 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:27.371 00091 App: retry get mid, wait: 3000
+1970-01-13 23:07:30.375 00091 getIMEI: imei2: null
+1970-01-13 23:07:30.377 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:30.379 00091 App: retry get mid, wait: 4000
+1970-01-13 23:07:34.434 00091 getIMEI: imei2: null
+1970-01-13 23:07:34.436 00091 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+1970-01-13 23:07:34.438 00091 App: retry get mid, wait: 5000
+1970-01-13 23:07:39.450 00091 getIMEI: imei2: 868868040001407
+1970-01-13 23:07:39.454 00091 App: get imei success, imei: 868868040001407
+1970-01-13 23:07:39.456 00091 DeviceInfo: set mid:868868040001407
+1970-01-13 23:07:39.483 00091 App: retry get mid() end.
+2021-03-30 14:09:47.357 00002 AlarmCheckReceiver: onReceive() should check version
+2021-03-30 14:09:47.379 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:09:49
+2021-03-30 14:09:47.573 00002 NetUtils: network is not available 
+2021-03-30 14:09:48.931 00002 SystemReceiver: subId: 1
+2021-03-30 14:09:48.935 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:09:48.939 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:09:49.172 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:09:50.076 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:09:52
+2021-03-30 14:09:50.080 00002 UpdateEngine: ota processing status: false
+2021-03-30 14:09:50.089 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:09:50.093 00102 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:09:50.097 00102 App: retry get mid() end.
+2021-03-30 14:09:50.103 00002 SystemReceiver: subId: 1
+2021-03-30 14:09:50.107 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:09:50.109 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:09:50.366 00102 UpdateEngine: OtaRun,check version begain
+2021-03-30 14:09:50.369 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:09:50.368 00102 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:09:50.373 00102 RegisterInfo: isValid() deviceSecret = null
+2021-03-30 14:09:50.382 00102 RegisterInfo: isValid() deviceId = null
+2021-03-30 14:09:50.384 00102 OTAExecuteManager: check_version_task() start register!
+2021-03-30 14:09:50.393 00102 ProductInfo: isValid() product_secret = null
+2021-03-30 14:09:50.398 00102 ProductInfo: isValid() product id = null
+2021-03-30 14:09:50.403 00104 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/obtainProduct ,json:{"oem":"GlocalMe","models":"G4SQ19","platform":"msm8909_8.1","deviceType":"phone","timestamp":1617084590,"sign":"b697cc1528cb5ae2e78cc836bbc850f5"}
+2021-03-30 14:09:50.595 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:09:50.601 00002 SystemReceiver: subId: 1
+2021-03-30 14:09:50.605 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:09:50.607 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:09:50.808 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:09:51.098 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:09:51.107 00002 SystemReceiver: subId: 1
+2021-03-30 14:09:51.112 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:09:51.115 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:09:51.312 00104 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":"e756d0e9b4d2d91683c8175fc9d4eef430ea21ef3bbfca655e880a8e2681cbf4c9105efb9fd396dfcc2640bbcbb669c4"}
+2021-03-30 14:09:51.334 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:09:51.351 00104 HttpTools: doPostObtainProduct() :1567484879_d439b60bc8cb486b84e8359408ac89c7
+2021-03-30 14:09:51.437 00108 HttpTools: doPostJson() request: url:https://iotapi.adups.com/register/1567484879 ,json:{"mid":"868868040001407","oem":"GlocalMe","models":"G4SQ19","platform":"msm8909_8.1","deviceType":"phone","sdkversion":"1.3.4_4_Beta","appversion":"0.0.36","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","mac":"30:89:d3:00:11:40","networkType":"4G","timestamp":1617084591,"sign":"5087ee005f641ee0230f8669801c3274"}
+2021-03-30 14:09:51.638 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:09:52.075 00108 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"deviceSecret":"f9bf71eab6773ea38c2dc3b123529071","deviceId":"8f3c84e003152392"}}
+2021-03-30 14:09:52.163 00111 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"4G","cid":"220226635","lac":"9341","mcc":"460","mnc":"0","timestamp":1617084592,"sign":"787fb6d3dac5f633135818641d4c5869"}
+2021-03-30 14:09:52.866 00111 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:09:52.887 00102 UpdateEngine: versionInfoPair 1000
+2021-03-30 14:09:52.890 00102 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-30 14:09:52.942 00102 AlarmManagerr:: setAlarm() start time:2021-03-31 15:09:54
+2021-03-30 14:09:53.255 00102 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1510014976,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-30 14:09:53.663 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-30 14:10:01.764 00098 SystemReceiver: onComplete
+2021-03-30 14:10:01.840 00098 AlarmManagerr:: setAlarm() start time:2021-03-31 15:10:03
+2021-03-30 14:10:01.845 00098 UpdateEngine: ota processing status: false
+2021-03-30 14:10:01.862 00116 UpdateEngine: run() The Fota APP is in the foreground now, this Ota operation will be cancelled
+2021-03-30 14:10:04.799 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:10:06.127 00119 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"4G","cid":"220226635","lac":"9341","mcc":"460","mnc":"0","timestamp":1617084606,"sign":"da95868ca0d8382f2bdf1eb1bd4a3162"}
+2021-03-30 14:10:07.029 00119 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:10:24.323 00002 OtaNewVersionFragment: This OTA operation will be canceled
+2021-03-30 14:11:48.266 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:12:43.770 00002 DeviceInfo: set mid:868868040001407
+2021-03-30 14:12:43.775 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+2021-03-30 14:12:43.801 00002 DeviceInfo: --------------------------init info--------------------------
+2021-03-30 14:12:43.823 00002 BeanUtils: setVersionInfoFromLocal() set version info
+2021-03-30 14:12:43.857 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@7873a10, connectTimeout=20000, socketTimeout=20000}
+2021-03-30 14:12:43.879 00002 App: initFota() 11
+2021-03-30 14:12:43.882 00002 Apk build time: _2021.02.23T15:34_
+2021-03-30 14:12:43.884 00002 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:12:43.898 00002 App: retry get mid() end.
+2021-03-30 14:12:43.953 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:12:45
+2021-03-30 14:12:43.989 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+2021-03-30 14:12:43.991 00002 usb: mounted
+2021-03-30 14:12:43.996 00002 JobSchedulerService: onCreate() 
+2021-03-30 14:12:44.463 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+2021-03-30 14:13:04.649 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:13:13.688 00002 SystemReceiver: subId: 1
+2021-03-30 14:13:13.695 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:13:13.699 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:13:14.320 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:13:14.876 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:13:14.900 00002 SystemReceiver: subId: 1
+2021-03-30 14:13:14.904 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:13:14.906 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:13:15.264 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:13:15.574 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:13:15.582 00002 SystemReceiver: subId: 1
+2021-03-30 14:13:15.588 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:13:15.591 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:13:16.365 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:13:16.584 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:13:16.597 00002 SystemReceiver: subId: 1
+2021-03-30 14:13:16.602 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:13:16.604 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:13:16.837 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:13:17.112 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:13:29.900 00106 SystemReceiver: onComplete
+2021-03-30 14:13:29.912 00106 AlarmManagerr:: setAlarm() start time:2021-03-31 15:13:31
+2021-03-30 14:13:29.918 00106 UpdateEngine: ota processing status: false
+2021-03-30 14:13:29.922 00111 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:13:29.925 00111 App: retry get mid() end.
+2021-03-30 14:13:30.121 00111 UpdateEngine: OtaRun,check version begain
+2021-03-30 14:13:30.125 00111 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:13:30.158 00113 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"4G","cid":"220226635","lac":"9341","mcc":"460","mnc":"0","timestamp":1617084810,"sign":"bed55ef9424f64393818012d7eb56a98"}
+2021-03-30 14:13:30.706 00113 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:13:30.712 00111 UpdateEngine: versionInfoPair 1000
+2021-03-30 14:13:30.715 00111 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-30 14:13:30.740 00111 AlarmManagerr:: setAlarm() start time:2021-03-31 15:13:32
+2021-03-30 14:13:30.903 00111 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1447817216,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-30 14:13:31.240 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-30 14:13:41.206 00002 OtaNewVersionFragment: This OTA operation will be canceled
+2021-03-30 14:14:24.418 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:14:35.824 00002 SystemReceiver: subId: 2
+2021-03-30 14:14:35.860 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:14:35.870 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:14:36.137 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:14:36.244 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:14:36.254 00002 SystemReceiver: subId: 2
+2021-03-30 14:14:36.259 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:14:36.263 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:14:36.500 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:14:36.527 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:14:36.537 00002 SystemReceiver: subId: 2
+2021-03-30 14:14:36.542 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:14:36.544 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:14:36.655 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:14:36.673 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:14:36.683 00002 SystemReceiver: subId: 2
+2021-03-30 14:14:36.687 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:14:36.689 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:14:36.829 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:14:36.836 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:14:51.657 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:15:05.886 00002 SystemReceiver: subId: 3
+2021-03-30 14:15:05.897 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:15:05.901 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:15:06.102 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:15:06.373 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:15:06.392 00002 SystemReceiver: subId: 3
+2021-03-30 14:15:06.399 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:15:06.401 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:15:08.044 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:15:08.529 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:15:08.538 00002 SystemReceiver: subId: 3
+2021-03-30 14:15:08.542 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:15:08.544 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:15:08.919 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:15:09.353 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:15:09.364 00002 SystemReceiver: subId: 3
+2021-03-30 14:15:09.369 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:15:09.371 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:15:09.741 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:15:10.078 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:16:23.591 00002 DeviceInfo: set mid:868868040001407
+2021-03-30 14:16:23.599 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+2021-03-30 14:16:23.612 00002 DeviceInfo: --------------------------init info--------------------------
+2021-03-30 14:16:23.636 00002 BeanUtils: setVersionInfoFromLocal() set version info
+2021-03-30 14:16:23.662 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@36d3efc, connectTimeout=20000, socketTimeout=20000}
+2021-03-30 14:16:23.689 00002 App: initFota() 11
+2021-03-30 14:16:23.699 00002 Apk build time: _2021.02.23T15:34_
+2021-03-30 14:16:23.710 00002 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:16:23.712 00002 App: retry get mid() end.
+2021-03-30 14:16:23.724 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:16:25
+2021-03-30 14:16:23.760 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+2021-03-30 14:16:23.763 00002 usb: mounted
+2021-03-30 14:16:23.766 00002 JobSchedulerService: onCreate() 
+2021-03-30 14:16:24.138 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+2021-03-30 14:16:49.276 00002 SystemReceiver: subId: 2
+2021-03-30 14:16:49.299 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:16:49.309 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:16:49.619 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:16:49.639 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:16:49.650 00002 SystemReceiver: subId: 2
+2021-03-30 14:16:49.654 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:16:49.657 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:16:49.780 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:16:49.827 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:16:49.837 00002 SystemReceiver: subId: 2
+2021-03-30 14:16:49.841 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:16:49.844 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:16:49.986 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:16:49.998 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:16:50.008 00002 SystemReceiver: subId: 2
+2021-03-30 14:16:50.012 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:16:50.015 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:16:50.117 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:16:50.127 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:07.158 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:20.609 00002 SystemReceiver: subId: 3
+2021-03-30 14:17:20.617 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:17:20.641 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:17:20.961 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:17:21.708 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:21.729 00002 SystemReceiver: subId: 3
+2021-03-30 14:17:21.735 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:17:21.737 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:17:22.125 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:17:23.256 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:23.270 00002 SystemReceiver: subId: 3
+2021-03-30 14:17:23.286 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:17:23.289 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:17:23.850 00102 SystemReceiver: onComplete
+2021-03-30 14:17:23.948 00102 AlarmManagerr:: setAlarm() start time:2021-03-31 15:17:25
+2021-03-30 14:17:23.956 00102 UpdateEngine: ota processing status: false
+2021-03-30 14:17:23.976 00106 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:17:23.979 00106 App: retry get mid() end.
+2021-03-30 14:17:24.419 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:17:25.123 00106 UpdateEngine: OtaRun,check version begain
+2021-03-30 14:17:25.133 00106 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:17:25.240 00109 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"4G","cid":"220226635","lac":"9341","mcc":"460","mnc":"1","timestamp":1617085045,"sign":"a605dade0d86554f9a5b7d95cec18080"}
+2021-03-30 14:17:25.576 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:25.584 00002 SystemReceiver: subId: 3
+2021-03-30 14:17:25.588 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:17:25.590 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:17:26.078 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:17:26.246 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:17:26.531 00109 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:17:26.538 00106 UpdateEngine: versionInfoPair 1000
+2021-03-30 14:17:26.541 00106 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-30 14:17:26.590 00106 AlarmManagerr:: setAlarm() start time:2021-03-31 15:17:28
+2021-03-30 14:17:26.859 00106 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1410543616,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-30 14:17:27.136 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-30 14:17:34.765 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:18:44.931 00002 DeviceInfo: set mid:868868040001407
+2021-03-30 14:18:44.953 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+2021-03-30 14:18:45.033 00002 DeviceInfo: --------------------------init info--------------------------
+2021-03-30 14:18:45.121 00002 BeanUtils: setVersionInfoFromLocal() set version info
+2021-03-30 14:18:45.136 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@bb507f5, connectTimeout=20000, socketTimeout=20000}
+2021-03-30 14:18:45.147 00002 App: initFota() 11
+2021-03-30 14:18:45.151 00002 Apk build time: _2021.02.23T15:34_
+2021-03-30 14:18:45.153 00002 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:18:45.155 00002 App: retry get mid() end.
+2021-03-30 14:18:45.190 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:18:47
+2021-03-30 14:18:45.327 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+2021-03-30 14:18:45.334 00002 usb: mounted
+2021-03-30 14:18:45.361 00002 JobSchedulerService: onCreate() 
+2021-03-30 14:18:44.943 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+2021-03-30 14:19:35.577 00002 SystemReceiver: subId: 2
+2021-03-30 14:19:35.603 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:19:35.608 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:19:36.017 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:19:36.033 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:19:36.046 00002 SystemReceiver: subId: 2
+2021-03-30 14:19:36.055 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:19:36.057 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:19:36.191 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:19:36.199 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:19:36.207 00002 SystemReceiver: subId: 2
+2021-03-30 14:19:36.210 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:19:36.213 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:19:36.296 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:19:36.303 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:19:36.311 00002 SystemReceiver: subId: 2
+2021-03-30 14:19:36.315 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:19:36.318 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:19:36.409 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:19:36.417 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:29:01.062 00106 SystemReceiver: onTimeOut
+2021-03-30 14:36:45.739 00002 SystemReceiver: wifi connected, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:36:46.589 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:36:46.598 00002 SystemReceiver: wifi connected, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:36:47.174 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:36:47.587 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:38:36.746 00002 DeviceInfo: set mid:default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+2021-03-30 14:38:36.841 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+2021-03-30 14:38:36.850 00002 DeviceInfo: --------------------------init info--------------------------
+2021-03-30 14:38:36.857 00002 BeanUtils: setVersionInfoFromLocal() set version info
+2021-03-30 14:38:36.874 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@631741a, connectTimeout=20000, socketTimeout=20000}
+2021-03-30 14:38:36.894 00002 App: initFota() 11
+2021-03-30 14:38:36.900 00002 Apk build time: _2021.02.23T15:34_
+2021-03-30 14:38:36.903 00002 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:38:36.905 00002 App: mid is invalid
+2021-03-30 14:38:36.988 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:38:38
+2021-03-30 14:38:37.002 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+2021-03-30 14:38:37.005 00002 usb: mounted
+2021-03-30 14:38:37.014 00002 JobSchedulerService: onCreate() 
+2021-03-30 14:38:37.061 00099 getIMEI: imei2: null
+2021-03-30 14:38:37.063 00099 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+2021-03-30 14:38:37.069 00099 App: retry get mid, wait: 0
+2021-03-30 14:38:37.081 00099 getIMEI: imei2: null
+2021-03-30 14:38:37.087 00099 getIMEI: default-imei: default-imei-1de76188-72ee-485e-b32c-099c1987b58c
+2021-03-30 14:38:37.092 00099 App: retry get mid, wait: 1000
+2021-03-30 14:38:37.326 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+2021-03-30 14:38:38.138 00099 getIMEI: imei2: 868868040001407
+2021-03-30 14:38:38.145 00099 App: get imei success, imei: 868868040001407
+2021-03-30 14:38:38.147 00099 DeviceInfo: set mid:868868040001407
+2021-03-30 14:38:38.218 00099 App: retry get mid() end.
+2021-03-30 14:39:04.720 00002 SystemReceiver: subId: 2
+2021-03-30 14:39:04.730 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:39:04.734 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:39:04.863 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:39:04.872 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:39:04.879 00002 SystemReceiver: subId: 2
+2021-03-30 14:39:04.883 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:39:04.886 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:39:04.966 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:39:04.973 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:39:04.981 00002 SystemReceiver: subId: 2
+2021-03-30 14:39:04.984 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:39:04.987 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:39:05.064 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:39:05.071 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:39:05.079 00002 SystemReceiver: subId: 2
+2021-03-30 14:39:05.083 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:39:05.085 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:39:05.164 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:39:05.171 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:40:46.027 00002 MainActivity: checkVerionForNeedPermisson 
+2021-03-30 14:40:46.038 00111 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:40:46.060 00112 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"3G","cid":"228574543","lac":"42282","mcc":"460","mnc":"1","timestamp":1617086446,"sign":"cbabae2d9680dfd4bf72d9c545fd7a66"}
+2021-03-30 14:40:46.181 00112 HttpTools: doPostJson() response: result:null
+2021-03-30 14:40:46.185 00112 HttpTools: doPostJson() exception:
+null (0) - java.net.UnknownHostException: Unable to resolve host "iotapi.adups.com": No address associated with hostname
+	at com.abupdate.a.d.a.a(Unknown Source:58)
+	at com.abupdate.a.d.a.b(Unknown Source:18)
+	at com.abupdate.a.a.a(Unknown Source:15)
+	at com.abupdate.a.e.a.a.n(Unknown Source:4)
+	at com.abupdate.iot_libs.a.a.a(Unknown Source:357)
+	at com.abupdate.iot_libs.a.a.a(Unknown Source:182)
+	at com.abupdate.iot_libs.c.k.call(Unknown Source:8)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.net.UnknownHostException: Unable to resolve host "iotapi.adups.com": No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:111)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:90)
+	at java.net.InetAddress.getAllByName(InetAddress.java:787)
+	at com.android.okhttp.Dns$1.lookup(Dns.java:39)
+	at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:175)
+	at com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:141)
+	at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:83)
+	at com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:174)
+	at com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:126)
+	at com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:95)
+	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:281)
+	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:224)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:461)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:127)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:258)
+	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(Unknown Source:0)
+	at com.abupdate.a.d.a.a(Unknown Source:27)
+	at com.abupdate.a.d.a.b(Unknown Source:101)
+	at com.abupdate.a.d.a.a(Unknown Source:47)
+	... 12 more
+
+2021-03-30 14:40:46.190 00111 OTAExecuteManager: check_version_task() json is null!
+2021-03-30 14:40:57.925 00002 SystemReceiver: wifi connected, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:40:59.799 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:40:59.806 00002 SystemReceiver: wifi connected, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:41:00.057 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:41:00.136 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:41:08.499 00111 SystemReceiver: onComplete
+2021-03-30 14:41:08.520 00111 AlarmManagerr:: setAlarm() start time:2021-03-31 15:41:10
+2021-03-30 14:41:08.526 00111 UpdateEngine: ota processing status: false
+2021-03-30 14:41:08.530 00118 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:41:08.533 00118 App: retry get mid() end.
+2021-03-30 14:41:08.736 00118 UpdateEngine: OtaRun,check version begain
+2021-03-30 14:41:08.740 00118 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:41:08.760 00119 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"WIFI","cid":"228574543","lac":"42282","mcc":"460","mnc":"1","timestamp":1617086468,"sign":"2defeeb6a52715171ccf3f501c98d59e"}
+2021-03-30 14:41:09.358 00119 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:41:09.365 00118 UpdateEngine: versionInfoPair 1000
+2021-03-30 14:41:09.368 00118 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-30 14:41:09.388 00118 AlarmManagerr:: setAlarm() start time:2021-03-31 15:41:11
+2021-03-30 14:41:09.581 00118 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1419399168,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-30 14:41:09.664 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-31 15:39:21.771 00002 OtaNewVersionFragment: This OTA operation will be canceled
+2021-03-31 15:41:11.460 00002 AlarmCheckReceiver: onReceive() should check version
+2021-03-31 15:41:11.473 00002 AlarmManagerr:: setAlarm() start time:2021-04-01 16:41:13
+2021-03-31 15:41:12.221 00002 AlarmManagerr:: setAlarm() start time:2021-04-01 16:41:14
+2021-03-31 15:41:12.226 00002 UpdateEngine: ota processing status: false
+2021-03-31 15:41:12.230 00127 App: retryGetMidIfNecessary will be executed
+2021-03-31 15:41:12.234 00127 App: retry get mid() end.
+2021-03-31 15:41:12.554 00127 UpdateEngine: OtaRun,check version begain
+2021-03-31 15:41:12.556 00127 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-31 15:41:12.573 00128 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"WIFI","cid":"228574543","lac":"42282","mcc":"460","mnc":"1","timestamp":1617176472,"sign":"da9d1c440b77baf497f1582486fed3a6"}
+2021-03-31 15:41:14.063 00128 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-31 15:41:14.070 00127 UpdateEngine: versionInfoPair 1000
+2021-03-31 15:41:14.073 00127 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-31 15:41:14.094 00127 AlarmManagerr:: setAlarm() start time:2021-04-01 16:41:16
+2021-03-31 15:41:14.611 00127 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1414778880,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-31 15:41:14.690 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-30 14:47:02.846 00002 DeviceInfo: set mid:868868040001407
+2021-03-30 14:47:02.855 00002 OtaAgentPolicy: --------------------------init Fota--------------------------
+2021-03-30 14:47:02.865 00002 DeviceInfo: --------------------------init info--------------------------
+2021-03-30 14:47:02.874 00002 BeanUtils: setVersionInfoFromLocal() set version info
+2021-03-30 14:47:02.892 00002 a: initConfig() HttpConfig{context=com.abupdate.fota_demo_iot.gloable.App@3495c89, connectTimeout=20000, socketTimeout=20000}
+2021-03-30 14:47:02.910 00002 App: initFota() 11
+2021-03-30 14:47:02.913 00002 Apk build time: _2021.02.23T15:34_
+2021-03-30 14:47:02.916 00002 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:47:02.918 00002 App: retry get mid() end.
+2021-03-30 14:47:02.956 00002 AlarmManagerr:: setAlarm() start time:2021-03-31 15:47:04
+2021-03-30 14:47:02.985 00002 JobSchedulerService: onCreate() 
+2021-03-30 14:47:03.040 00002 JobSchedulerService: onStartJob() 
+2021-03-30 14:47:03.268 00002 UsbDiskReceiver: onReceive() /storage/emulated/0
+2021-03-30 14:47:03.288 00002 usb: mounted
+2021-03-30 14:47:04.921 00002 UpgradeReceiver: action: android.intent.action.BOOT_COMPLETED
+2021-03-30 14:47:07.329 00002 JobSchedulerService: onStopJob() 
+2021-03-30 14:47:28.356 00002 SystemReceiver: subId: -1
+2021-03-30 14:47:28.376 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:29.892 00002 SystemReceiver: subId: -1
+2021-03-30 14:47:29.901 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:31.365 00002 SystemReceiver: subId: 2
+2021-03-30 14:47:31.372 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:47:31.376 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:31.531 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:47:31.543 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:31.549 00002 SystemReceiver: subId: 2
+2021-03-30 14:47:31.553 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:47:31.556 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:31.632 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:47:31.639 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:31.647 00002 SystemReceiver: subId: 2
+2021-03-30 14:47:31.651 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:47:31.654 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:31.732 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:47:31.740 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:31.748 00002 SystemReceiver: subId: 2
+2021-03-30 14:47:31.752 00002 SystemReceiver: getSlotIndex: 1
+2021-03-30 14:47:31.754 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:31.835 00002 SystemReceiver: slotId 1 is valid true,seed card, set SP_NETWORK_AVALIABLE false
+2021-03-30 14:47:31.842 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:44.203 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:57.694 00002 SystemReceiver: subId: 4
+2021-03-30 14:47:57.722 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:47:57.729 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:58.035 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:47:58.596 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:58.606 00002 SystemReceiver: subId: 4
+2021-03-30 14:47:58.614 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:47:58.617 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:47:58.860 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:47:59.103 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:47:59.111 00002 SystemReceiver: subId: 4
+2021-03-30 14:47:59.123 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:47:59.127 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:00.441 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:00.635 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:00.646 00002 SystemReceiver: subId: 4
+2021-03-30 14:48:00.655 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:48:00.658 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:00.850 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:01.085 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:04.151 00090 SystemReceiver: onComplete
+2021-03-30 14:48:04.168 00090 AlarmManagerr:: setAlarm() start time:2021-03-31 15:48:06
+2021-03-30 14:48:04.175 00090 UpdateEngine: ota processing status: false
+2021-03-30 14:48:04.179 00095 App: retryGetMidIfNecessary will be executed
+2021-03-30 14:48:04.182 00095 App: retry get mid() end.
+2021-03-30 14:48:04.500 00095 UpdateEngine: OtaRun,check version begain
+2021-03-30 14:48:04.503 00095 OtaAgentPolicy: --------------------------check version--------------------------
+2021-03-30 14:48:04.536 00096 HttpTools: doPostJson() request: url:https://iotapi.adups.com/product/1567484879/8f3c84e003152392/ota/checkVersion ,json:{"mid":"868868040001407","version":"G4SQ19_TSV3.1.005.019.210326_20210326-2112","networkType":"4G","cid":"220226635","lac":"9341","mcc":"460","mnc":"1","timestamp":1617086884,"sign":"334016e3f1aacdcdbda9e5680a867e39"}
+2021-03-30 14:48:12.033 00096 HttpTools: doPostJson() response: result:{"status":1000,"msg":"success","data":{"releaseNotes":{"publishDate":"2021-03-29","version":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503","content":"[{\"country\":\"zh_CN\",\"content\":\"1.优化系统.修复错误\"}]"},"safe":{"encKey":null,"isEncrypt":0},"version":{"segmentMd5":"[{\"num\":0,\"startpos\":0,\"md5\":\"eea77a225c424c0e7f9f1e73affc7760\",\"endpos\":5242880},{\"num\":1,\"startpos\":5242880,\"md5\":\"ef9583e817fdac1f23cbf5d8f682422b\",\"endpos\":6150718}]","bakUrl":"http://iotdownbak.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","versionAlias":"","deltaUrl":"http://iotdown.mayitek.com/1567484879/5317618/db5c850b-0fc6-49a7-b158-c3982728b68f.zip","deltaID":"5317618","fileSize":6150718,"md5sum":"78c5a25264e352465f47fcdda3c4beaf","versionName":"G4SQ19_T_TSV3.1.005.019.210329_20210329-1503"},"policy":{"download":[{"key_name":"wifi","key_message":"仅wifi下载","key_value":"optional"},{"key_name":"storageSize","key_message":"存储空间不足","key_value":"80000000"},{"key_name":"forceDownload","key_message":"","key_value":"false"}],"install":[{"key_name":"battery","key_message":"电量不足，请充电后重试！","key_value":"30"},{"key_name":"rebootUpgrade","key_message":"","key_value":"false"},{"key_name":"force","key_message":"","key_value":"{\"from\": \"00:00\", \"to\": \"00:00\",\"gap\": \"00:00\"}"}],"check":[{"key_name":"cycle","key_message":"","key_value":"1500"}]}}}
+2021-03-30 14:48:12.040 00095 UpdateEngine: versionInfoPair 1000
+2021-03-30 14:48:12.059 00095 UpdateEngine: VersionInfo.getInstance().getReleaseNoteByCurrentLanguage: 1.优化系统.修复错误
+2021-03-30 14:48:12.076 00095 AlarmManagerr:: setAlarm() start time:2021-03-31 15:48:14
+2021-03-30 14:48:12.304 00095 PolicyManager: is_storage_space_enough() need_size = 80000000,free_size = 1403432960,path = /data/user/0/com.abupdate.fota_demo_iot/files/update.zip
+2021-03-30 14:48:12.677 00002 UpdateResultActivity: initView() Dialog type: action_ota_have_new_version
+2021-03-30 14:48:16.267 00002 OtaNewVersionFragment: This OTA operation will be canceled
+2021-03-30 14:48:25.408 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:39.509 00002 SystemReceiver: subId: 1
+2021-03-30 14:48:39.528 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:48:39.537 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:39.740 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:39.876 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:39.886 00002 SystemReceiver: subId: 1
+2021-03-30 14:48:39.889 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:48:39.891 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:40.460 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:40.818 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:40.832 00002 SystemReceiver: subId: 1
+2021-03-30 14:48:40.836 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:48:40.838 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:41.216 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:41.427 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
+2021-03-30 14:48:41.435 00002 SystemReceiver: subId: 1
+2021-03-30 14:48:41.440 00002 SystemReceiver: getSlotIndex: 0
+2021-03-30 14:48:41.443 00002 SystemReceiver: slotId is valid true
+2021-03-30 14:48:41.617 00002 SystemReceiver: slotId 0 is valid true, set SP_NETWORK_AVALIABLE true
+2021-03-30 14:48:41.796 00002 UpgradeReceiver: action: android.net.conn.CONNECTIVITY_CHANGE
